@@ -1,0 +1,2 @@
+C:\Users\angel\OneDrive\Рабочий стол\BSUIR\5 сем\СПП\TestsGenerator\TestsGenerator\obj\Debug\TestsGenerator.csprojAssemblyReference.cache
+C:\Users\angel\OneDrive\Рабочий стол\BSUIR\5 сем\СПП\TestsGenerator\TestsGenerator\obj\Debug\TestsGenerator.csproj.CoreCompileInputs.cache
