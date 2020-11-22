@@ -61,7 +61,7 @@ namespace TestsGeneratorApplication
             }
         }
 
-        private void btnGenerate_Click(object sender, EventArgs e)
+        private async void btnGenerate_Click(object sender, EventArgs e)
         {
             if (tbMaxRead.Text.Length == 0 || tbMaxProcess.Text.Length == 0 || tbMaxWrite.Text.Length == 0)
             {
@@ -69,9 +69,9 @@ namespace TestsGeneratorApplication
                 return;
             }
 
-            uint maxReadFilesCount = Convert.ToUInt32(tbMaxRead.Text);
-            uint maxProcessTasksCount = Convert.ToUInt32(tbMaxProcess.Text);
-            uint maxWriteFilesCount = Convert.ToUInt32(tbMaxWrite.Text);
+            int maxReadFilesCount = Convert.ToInt32(tbMaxRead.Text);
+            int maxProcessTasksCount = Convert.ToInt32(tbMaxProcess.Text);
+            int maxWriteFilesCount = Convert.ToInt32(tbMaxWrite.Text);
 
             if (!(maxReadFilesCount > 0 && maxProcessTasksCount > 0 && maxWriteFilesCount > 0))
             {
@@ -86,7 +86,7 @@ namespace TestsGeneratorApplication
             }
 
             TestsGenerator.TestsGenerator generator = new TestsGenerator.TestsGenerator(files, maxReadFilesCount, maxProcessTasksCount, maxWriteFilesCount);
-            generator.Generate();
+            await generator.Generate();
         }
 
 
