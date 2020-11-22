@@ -8,30 +8,22 @@ namespace TestsGenerator
 {
     public class SyntaxProcessResult
     {
-        List<string> classNames;
-        List<string> methodNames;
+        List<ClassInformation> classes;
 
-        public List<string> ClassNames
+        public SyntaxProcessResult(List<ClassInformation> classes)
         {
-            get
-            {
-                return classNames;
-            }
-            set
-            {
-                classNames = new List<string>(value);
-            }
+            Classes = classes;
         }
 
-        public List<string> MethodNames
+        public List<ClassInformation> Classes
         {
             get
             {
-                return methodNames;
+                return classes;
             }
             set
             {
-                methodNames = new List<string>(value);
+                classes = new List<ClassInformation>(value);
             }
         }
     }
