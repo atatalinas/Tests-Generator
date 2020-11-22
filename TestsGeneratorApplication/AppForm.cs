@@ -86,11 +86,27 @@ namespace TestsGeneratorApplication
             }
 
             TestsGenerator.TestsGenerator generator = new TestsGenerator.TestsGenerator(files, maxReadFilesCount, maxProcessTasksCount, maxWriteFilesCount);
-            await generator.Generate();
+
+            string folderPath;
+            using (FolderBrowserDialog fbd = new FolderBrowserDialog())
+            {
+                DialogResult result = fbd.ShowDialog();
+                if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(fbd.SelectedPath))
+                {
+                    folderPath = fbd.SelectedPath;
+                }
+                else
+                {
+                    return;
+                }
+            }
+            if (!string.IsNullOrEmpty(folderPath))
+            {
+                AsyncFileWriter asyncWriter = new AsyncFileWriter(folderPath);
+                await generator.Generate(asyncWriter);
+            }
+            else
+                return;
         }
-
-
-
-
     }
 }
