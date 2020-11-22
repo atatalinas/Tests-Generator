@@ -1,0 +1,10 @@
+C:\Users\angel\OneDrive\Рабочий стол\BSUIR\5 сем\СПП\TestsGenerator\TestsGeneratorApplication\bin\Debug\TestsGeneratorApplication.exe.config
+C:\Users\angel\OneDrive\Рабочий стол\BSUIR\5 сем\СПП\TestsGenerator\TestsGeneratorApplication\bin\Debug\TestsGeneratorApplication.exe
+C:\Users\angel\OneDrive\Рабочий стол\BSUIR\5 сем\СПП\TestsGenerator\TestsGeneratorApplication\bin\Debug\TestsGeneratorApplication.pdb
+C:\Users\angel\OneDrive\Рабочий стол\BSUIR\5 сем\СПП\TestsGenerator\TestsGeneratorApplication\obj\Debug\TestsGeneratorApplication.csprojAssemblyReference.cache
+C:\Users\angel\OneDrive\Рабочий стол\BSUIR\5 сем\СПП\TestsGenerator\TestsGeneratorApplication\obj\Debug\TestsGeneratorApplication.Properties.Resources.resources
+C:\Users\angel\OneDrive\Рабочий стол\BSUIR\5 сем\СПП\TestsGenerator\TestsGeneratorApplication\obj\Debug\TestsGeneratorApplication.csproj.GenerateResource.cache
+C:\Users\angel\OneDrive\Рабочий стол\BSUIR\5 сем\СПП\TestsGenerator\TestsGeneratorApplication\obj\Debug\TestsGeneratorApplication.csproj.CoreCompileInputs.cache
+C:\Users\angel\OneDrive\Рабочий стол\BSUIR\5 сем\СПП\TestsGenerator\TestsGeneratorApplication\obj\Debug\TestsGeneratorApplication.exe
+C:\Users\angel\OneDrive\Рабочий стол\BSUIR\5 сем\СПП\TestsGenerator\TestsGeneratorApplication\obj\Debug\TestsGeneratorApplication.pdb
+C:\Users\angel\OneDrive\Рабочий стол\BSUIR\5 сем\СПП\TestsGenerator\TestsGeneratorApplication\obj\Debug\TestsGeneratorApplication.AppForm.resources
