@@ -28,44 +28,52 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.btnGenerate = new System.Windows.Forms.Button();
+            this.tbMaxRead = new System.Windows.Forms.TextBox();
+            this.tbMaxProcess = new System.Windows.Forms.TextBox();
+            this.tbMaxWrite = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnChooseFiles = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // btnGenerate
             // 
-            this.button1.Location = new System.Drawing.Point(352, 209);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnGenerate.Location = new System.Drawing.Point(377, 223);
+            this.btnGenerate.Name = "btnGenerate";
+            this.btnGenerate.Size = new System.Drawing.Size(101, 41);
+            this.btnGenerate.TabIndex = 0;
+            this.btnGenerate.Text = "Generate";
+            this.btnGenerate.UseVisualStyleBackColor = true;
+            this.btnGenerate.Click += new System.EventHandler(this.btnGenerate_Click);
             // 
-            // textBox1
+            // tbMaxRead
             // 
-            this.textBox1.Location = new System.Drawing.Point(507, 31);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 1;
+            this.tbMaxRead.Location = new System.Drawing.Point(507, 31);
+            this.tbMaxRead.Name = "tbMaxRead";
+            this.tbMaxRead.Size = new System.Drawing.Size(100, 22);
+            this.tbMaxRead.TabIndex = 1;
+            this.tbMaxRead.TextChanged += new System.EventHandler(this.NumbersOnly_TextChanged);
+            this.tbMaxRead.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NumbersOnly_KeyPress);
             // 
-            // textBox2
+            // tbMaxProcess
             // 
-            this.textBox2.Location = new System.Drawing.Point(507, 86);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
-            this.textBox2.TabIndex = 2;
+            this.tbMaxProcess.Location = new System.Drawing.Point(507, 86);
+            this.tbMaxProcess.Name = "tbMaxProcess";
+            this.tbMaxProcess.Size = new System.Drawing.Size(100, 22);
+            this.tbMaxProcess.TabIndex = 2;
+            this.tbMaxProcess.TextChanged += new System.EventHandler(this.NumbersOnly_TextChanged);
+            this.tbMaxProcess.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NumbersOnly_KeyPress);
             // 
-            // textBox3
+            // tbMaxWrite
             // 
-            this.textBox3.Location = new System.Drawing.Point(507, 137);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 22);
-            this.textBox3.TabIndex = 3;
+            this.tbMaxWrite.Location = new System.Drawing.Point(507, 137);
+            this.tbMaxWrite.Name = "tbMaxWrite";
+            this.tbMaxWrite.Size = new System.Drawing.Size(100, 22);
+            this.tbMaxWrite.TabIndex = 3;
+            this.tbMaxWrite.TextChanged += new System.EventHandler(this.NumbersOnly_TextChanged);
+            this.tbMaxWrite.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NumbersOnly_KeyPress);
             // 
             // label1
             // 
@@ -94,18 +102,29 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Количество одновременно записываемых файлов:";
             // 
+            // btnChooseFiles
+            // 
+            this.btnChooseFiles.Location = new System.Drawing.Point(195, 223);
+            this.btnChooseFiles.Name = "btnChooseFiles";
+            this.btnChooseFiles.Size = new System.Drawing.Size(101, 41);
+            this.btnChooseFiles.TabIndex = 7;
+            this.btnChooseFiles.Text = "Choose files";
+            this.btnChooseFiles.UseVisualStyleBackColor = true;
+            this.btnChooseFiles.Click += new System.EventHandler(this.btnChooseFiles_Click);
+            // 
             // AppForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(652, 303);
+            this.Controls.Add(this.btnChooseFiles);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.tbMaxWrite);
+            this.Controls.Add(this.tbMaxProcess);
+            this.Controls.Add(this.tbMaxRead);
+            this.Controls.Add(this.btnGenerate);
             this.Name = "AppForm";
             this.Text = "Tests Generator";
             this.ResumeLayout(false);
@@ -115,13 +134,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button btnGenerate;
+        private System.Windows.Forms.TextBox tbMaxRead;
+        private System.Windows.Forms.TextBox tbMaxProcess;
+        private System.Windows.Forms.TextBox tbMaxWrite;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnChooseFiles;
     }
 }
 
