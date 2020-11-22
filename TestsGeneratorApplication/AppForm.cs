@@ -15,11 +15,10 @@ namespace TestsGeneratorApplication
         public AppForm()
         {
             InitializeComponent();
+            this.Width = 550;
+            this.Height = 350;
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
