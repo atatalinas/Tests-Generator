@@ -7,14 +7,14 @@ using System.Threading.Tasks.Dataflow;
 
 namespace TestsGenerator
 {
-    public class TestsGenerator
+    public class TestGenerator
     {
         private int maxReadFilesCount;
         private int maxProcessTasksCount;
         private int maxWriteFilesCount;
         private List<string> fileNames;
 
-        public TestsGenerator(List<string> fileNames, int maxReadableCount, int maxProcessCount, int maxWritableCount)
+        public TestGenerator(List<string> fileNames, int maxReadableCount, int maxProcessCount, int maxWritableCount)
         {
             this.fileNames = new List<string>(fileNames);
             this.maxReadFilesCount = maxReadableCount;

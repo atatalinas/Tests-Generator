@@ -11,7 +11,7 @@ using TestsGenerator;
 
 namespace TestsGeneratorApplication
 {
-    public partial class AppForm : System.Windows.Forms.Form
+    public partial class AppForm : Form
     {
         private List<string> files;
         public AppForm()
@@ -53,7 +53,7 @@ namespace TestsGeneratorApplication
             OpenFileDialog openFileDlg = new OpenFileDialog();
             openFileDlg.Filter = "C# class files (*.cs) | *.cs";
             openFileDlg.Multiselect = true;
-            openFileDlg.InitialDirectory = "C:\\Users\\angel\\OneDrive\\Рабочий стол\\BSUIR\\5 сем\\СПП\\TestsGenerator\\Input";
+            openFileDlg.InitialDirectory = "C:\\Users\\angel\\OneDrive\\Рабочий стол\\BSUIR\\5 сем\\СПП\\TestsGenerator\\Input\\";
             DialogResult result = openFileDlg.ShowDialog();
             if (result == DialogResult.OK)
             {
@@ -85,11 +85,12 @@ namespace TestsGeneratorApplication
                 return;
             }
 
-            TestsGenerator.TestsGenerator generator = new TestsGenerator.TestsGenerator(files, maxReadFilesCount, maxProcessTasksCount, maxWriteFilesCount);
+            TestsGenerator.TestGenerator generator = new TestsGenerator.TestGenerator(files, maxReadFilesCount, maxProcessTasksCount, maxWriteFilesCount);
 
             string folderPath;
             using (FolderBrowserDialog fbd = new FolderBrowserDialog())
             {
+                fbd.SelectedPath = @"C:\Users\angel\OneDrive\Рабочий стол\BSUIR\5 сем\СПП\TestsGenerator\Output\";
                 DialogResult result = fbd.ShowDialog();
                 if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(fbd.SelectedPath))
                 {

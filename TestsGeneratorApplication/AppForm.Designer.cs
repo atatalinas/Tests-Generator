@@ -43,7 +43,7 @@
             this.btnGenerate.Location = new System.Drawing.Point(377, 223);
             this.btnGenerate.Name = "btnGenerate";
             this.btnGenerate.Size = new System.Drawing.Size(101, 41);
-            this.btnGenerate.TabIndex = 0;
+            this.btnGenerate.TabIndex = 5;
             this.btnGenerate.Text = "Generate";
             this.btnGenerate.UseVisualStyleBackColor = true;
             this.btnGenerate.Click += new System.EventHandler(this.btnGenerate_Click);
@@ -81,7 +81,7 @@
             this.label1.Location = new System.Drawing.Point(29, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(287, 17);
-            this.label1.TabIndex = 4;
+            this.label1.TabIndex = 6;
             this.label1.Text = "Количество файлов, загружаемых за раз: ";
             // 
             // label2
@@ -90,7 +90,7 @@
             this.label2.Location = new System.Drawing.Point(29, 86);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(449, 17);
-            this.label2.TabIndex = 5;
+            this.label2.TabIndex = 7;
             this.label2.Text = "Максимальное количество одновременно обрабатываемых задач:";
             // 
             // label3
@@ -99,7 +99,7 @@
             this.label3.Location = new System.Drawing.Point(29, 142);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(344, 17);
-            this.label3.TabIndex = 6;
+            this.label3.TabIndex = 8;
             this.label3.Text = "Количество одновременно записываемых файлов:";
             // 
             // btnChooseFiles
@@ -107,7 +107,7 @@
             this.btnChooseFiles.Location = new System.Drawing.Point(195, 223);
             this.btnChooseFiles.Name = "btnChooseFiles";
             this.btnChooseFiles.Size = new System.Drawing.Size(101, 41);
-            this.btnChooseFiles.TabIndex = 7;
+            this.btnChooseFiles.TabIndex = 4;
             this.btnChooseFiles.Text = "Choose files";
             this.btnChooseFiles.UseVisualStyleBackColor = true;
             this.btnChooseFiles.Click += new System.EventHandler(this.btnChooseFiles_Click);
